@@ -15,6 +15,7 @@
 		671D160D21AD7835005F4E54 /* FirstGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D160C21AD7835005F4E54 /* FirstGame.swift */; };
 		671D160F21AD78A7005F4E54 /* SecondGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D160E21AD78A7005F4E54 /* SecondGame.swift */; };
 		671D161121AD78E4005F4E54 /* ThirdGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D161021AD78E4005F4E54 /* ThirdGame.swift */; };
+		81C3319E3DFB4A4265171910 /* Pods_Group_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1C0C9490BB2AA938DEA33A /* Pods_Group_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		671D160C21AD7835005F4E54 /* FirstGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGame.swift; sourceTree = "<group>"; };
 		671D160E21AD78A7005F4E54 /* SecondGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGame.swift; sourceTree = "<group>"; };
 		671D161021AD78E4005F4E54 /* ThirdGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdGame.swift; sourceTree = "<group>"; };
+		9C5F8A36B776665D28D925BC /* Pods-Group App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Group App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Group App/Pods-Group App.debug.xcconfig"; sourceTree = "<group>"; };
+		A9EA504D8F622C6C35C8A72E /* Pods-Group App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Group App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Group App/Pods-Group App.release.xcconfig"; sourceTree = "<group>"; };
+		EA1C0C9490BB2AA938DEA33A /* Pods_Group_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Group_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C3319E3DFB4A4265171910 /* Pods_Group_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				671D15F921AD75B7005F4E54 /* Group App */,
 				671D15F821AD75B7005F4E54 /* Products */,
+				96610B7BC55B3944F806849E /* Pods */,
+				E260E93CAF13E729ED94B93E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,23 @@
 			path = "Group App";
 			sourceTree = "<group>";
 		};
+		96610B7BC55B3944F806849E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C5F8A36B776665D28D925BC /* Pods-Group App.debug.xcconfig */,
+				A9EA504D8F622C6C35C8A72E /* Pods-Group App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E260E93CAF13E729ED94B93E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA1C0C9490BB2AA938DEA33A /* Pods_Group_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 671D160921AD75B8005F4E54 /* Build configuration list for PBXNativeTarget "Group App" */;
 			buildPhases = (
+				1A71EDF5E404CF80D081DED8 /* [CP] Check Pods Manifest.lock */,
 				671D15F321AD75B7005F4E54 /* Sources */,
 				671D15F421AD75B7005F4E54 /* Frameworks */,
 				671D15F521AD75B7005F4E54 /* Resources */,
+				BA52D20D1278C4137E1D6691 /* [CP] Embed Pods Frameworks */,
+				0089210781B2849270E5FBAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,89 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0089210781B2849270E5FBAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Group App/Pods-Group App-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Group App/Pods-Group App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A71EDF5E404CF80D081DED8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Group App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA52D20D1278C4137E1D6691 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Group App/Pods-Group App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Group App/Pods-Group App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		671D15F321AD75B7005F4E54 /* Sources */ = {
@@ -292,10 +402,12 @@
 		};
 		671D160A21AD75B8005F4E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5F8A36B776665D28D925BC /* Pods-Group App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Group App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,10 +421,12 @@
 		};
 		671D160B21AD75B8005F4E54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9EA504D8F622C6C35C8A72E /* Pods-Group App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Group App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
