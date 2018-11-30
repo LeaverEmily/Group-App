@@ -7,6 +7,8 @@ class Game: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String?
     let region: CLCircularRegion
+    var active = false
+    
     
     init(coordinate: CLLocationCoordinate2D, title: String) {
         self.coordinate = coordinate

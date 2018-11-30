@@ -23,4 +23,7 @@ class GameManager{
         
     }
     
+    func getGame(by name: String) -> Game? {
+        return games.first() {$0.title == name}
+    }
 }

@@ -3,6 +3,7 @@ import UIKit
 
 class FirstGame: UIViewController {
     
+    var game: Game!
     
     @IBAction func slider(_ sender: UISlider) {
     }
