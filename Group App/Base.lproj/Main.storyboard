@@ -33,9 +33,9 @@
                     <navigationItem key="navigationItem" id="mny-Ok-Tp1"/>
                     <connections>
                         <outlet property="mapView" destination="xPV-ff-IsL" id="sqV-dP-X40"/>
-                        <segue destination="8ip-gt-y6j" kind="show" id="4Mb-PW-ydp"/>
-                        <segue destination="AwJ-Xp-aT1" kind="show" id="TOK-Ra-DAq"/>
-                        <segue destination="g0g-ga-3Mn" kind="show" id="D5C-zi-IEB"/>
+                        <segue destination="8ip-gt-y6j" kind="show" identifier="snowflakes" id="4Mb-PW-ydp"/>
+                        <segue destination="AwJ-Xp-aT1" kind="show" identifier="noughtsAndCrosses" id="TOK-Ra-DAq"/>
+                        <segue destination="g0g-ga-3Mn" kind="show" identifier="guessThePhoto" id="D5C-zi-IEB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

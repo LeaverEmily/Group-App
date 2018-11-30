@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="Xcode">
+    
+    
+   
+    <wpt lat="50.727023" lon="-1.863535">
+        <name>Game One</name>
+        <time>2014-09-24T14:55:20Z</time>
+    </wpt>
+    
+    
+    <wpt lat="50.720034" lon="-1.879796">
+        <name>Game Two</name>
+        <time>2014-09-24T14:55:35Z</time>
+    </wpt>
+    
+    
+    <wpt lat="50.715272" lon="-1.875261">
+        <name>Game Three</name>
+        <time>2014-09-24T14:55:45Z</time>
+    </wpt>
+    
+    
+    
+    
+    
+</gpx>
