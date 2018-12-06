@@ -20,12 +20,9 @@ class ViewController: UIViewController {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
-        
-        
-        
+
         gameManager.loadPoints { [unowned self] in
             for game in self.gameManager.games {
-//                locationManager.startMonitoring(for: game.region)
                 self.mapView.addAnnotation(game)
             }
         }
