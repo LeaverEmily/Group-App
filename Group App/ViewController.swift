@@ -43,38 +43,10 @@ class ViewController: UIViewController {
 
 extension ViewController: CLLocationManagerDelegate {
     
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        
-        guard let game = gameManager.getGame (by: region.identifier) else { return }
-        game.active = true
-        //activates ability to go to second, stops if not close enough
-        
-        
-        for annotation in mapView.annotations {
-            if annotation.title == region.identifier {
-                guard let annotationView = mapView.view(for: annotation) as? MKMarkerAnnotationView else { return }
-                annotationView.markerTintColor = .green //changes colour
-            }
-        }  //what is used when user entered region??
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        gameManager.updateDistance(from: location)
     }
-    
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        guard let game = gameManager.getGame(by: region.identifier) else { return }
-        game.active = false
-        
-        
-        for annotation in mapView.annotations {
-            if annotation.title == region.identifier {
-                guard let annotationView = mapView.view(for: annotation) as? MKMarkerAnnotationView else { return }
-                annotationView.markerTintColor = .orange
-                
-                
-                
-            }
-        }
-    }
-        //stops access to secondView once left region
-        
     
 }
 
@@ -83,9 +55,6 @@ extension ViewController: MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl){
         guard let game = view.annotation as? Game else { return }
         guard game.active else { return }
-        
-        
-        
         performSegue(withIdentifier: "snowflakes", sender: game)
     }
    
@@ -114,6 +83,11 @@ extension ViewController: MKMapViewDelegate{
         view.markerTintColor = .orange  // change it back
         
         return view
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let annotation = view.annotation as? Game else { return }
+        print(annotation.active)
     }
     
     

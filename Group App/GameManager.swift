@@ -39,4 +39,13 @@ class GameManager{
     func getGame(by name: String) -> Game? {
         return games.first() {$0.title == name}
     }
+    
+    func updateDistance(from location: CLLocation) {
+        for game in games {
+            game.updateDistance(location)
+            
+            
+        }
+    }
+    
 }
