@@ -21,13 +21,20 @@ class ViewController: UIViewController {
         locationManager.startUpdatingLocation()
         
         
-        for game in gameManager.games {
-            locationManager.startMonitoring(for: game.region)
-            mapView.addAnnotation(game)
+        
+        
+        gameManager.loadPoints { [unowned self] in
+            for game in self.gameManager.games {
+//                locationManager.startMonitoring(for: game.region)
+                self.mapView.addAnnotation(game)
+            }
         }
+        
         
     }
    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationViewController = segue.destination as? FirstGame {
             destinationViewController.game = sender as? Game
