@@ -125,7 +125,7 @@
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-ax-xTc">
                                 <rect key="frame" x="259" y="454" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="blV-il-6Dj"/>
                                 </connections>
@@ -133,7 +133,7 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcY-Ew-eI1">
                                 <rect key="frame" x="137" y="316" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="JX9-p6-beq"/>
                                 </connections>
@@ -141,7 +141,7 @@
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thr-y0-453">
                                 <rect key="frame" x="259" y="316" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="5Qu-Lg-An5"/>
                                 </connections>
@@ -149,7 +149,7 @@
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92l-TY-e1s">
                                 <rect key="frame" x="137" y="454" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="u0q-Rf-UTO"/>
                                 </connections>
@@ -157,7 +157,7 @@
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPR-Ji-QLO">
                                 <rect key="frame" x="16" y="454" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="5q7-bk-uxU"/>
                                 </connections>
@@ -165,7 +165,7 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVW-9n-Uff">
                                 <rect key="frame" x="16" y="316" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="nLq-FP-Zt2"/>
                                 </connections>
@@ -173,7 +173,7 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdi-ei-8wU">
                                 <rect key="frame" x="259" y="190" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="pdX-6u-K6v"/>
                                 </connections>
@@ -181,7 +181,7 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZw-C7-DwL">
                                 <rect key="frame" x="137" y="190" width="101" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="DbP-gO-1Pk"/>
                                 </connections>
@@ -189,7 +189,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7r-aV-RJ8">
                                 <rect key="frame" x="16" y="190" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="DQP-dL-qCo"/>
                                 </connections>
@@ -223,7 +223,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cross.png" width="512" height="512"/>
         <image name="grid.jpg" width="800" height="800"/>
     </resources>
 </document>
