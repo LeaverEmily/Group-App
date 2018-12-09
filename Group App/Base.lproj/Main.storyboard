@@ -194,14 +194,35 @@
                                     <action selector="naughtButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="DQP-dL-qCo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3U-Np-VP4">
+                                <rect key="frame" x="9" y="593" width="94" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" red="1" green="0.28282394633534302" blue="0.23363334524542712" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="AwJ-Xp-aT1" eventType="touchUpInside" id="PfU-Qc-Udt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CROSS WINS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L23-C4-CIW">
+                                <rect key="frame" x="106" y="124" width="163" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.28282394630000002" blue="0.23363334520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.75657967953993488" green="0.97392844887826036" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="V5X-xH-ec8"/>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="w3U-Np-VP4" id="ibs-FN-Lao"/>
+                        <outlet property="winLabel" destination="L23-C4-CIW" id="Oqo-zY-suI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TvL-MO-Yye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2276" y="1013"/>
+            <point key="canvasLocation" x="2276" y="1012.4437781109445"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mbb-bT-I7s">
