@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         gameManager.loadPoints { [unowned self] in
             for game in self.gameManager.games {
                 self.mapView.addAnnotation(game)
+                print(game.segueName)
             }
         }
         
@@ -33,13 +34,18 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destinationViewController = segue.destination as? FirstGame {
-            destinationViewController.game = sender as? Game
+        if segue.identifier == "gameOne"{}
+        else if segue.identifier == "gameTwo"{}
+        else if segue.identifier == "gameThree"{}
         } // prepare the forward segue from viewcontroller to second viewcontroller
-    }
-
-    
 }
+
+
+
+//if let destinationViewController = segue.destination as? FirstGame {
+   // destinationViewController.game = sender as? Game
+    
+
 
 extension ViewController: CLLocationManagerDelegate {
     
@@ -53,9 +59,9 @@ extension ViewController: CLLocationManagerDelegate {
 extension ViewController: MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl){
-        guard let game = view.annotation as? Game else { return }
+        guard let game = view.annotation as? GameAnnotation else { return }
         guard game.active else { return }
-        performSegue(withIdentifier: "snowflakes", sender: game)
+        performSegue(withIdentifier: game.segueName, sender: game)
     }
    
     
@@ -64,7 +70,7 @@ extension ViewController: MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?//return annotation view
     {
         
-        guard let annotation = annotation as? Game else { return nil }
+        guard let annotation = annotation as? GameAnnotation else { return nil }
         
         let identifier = "marker"
         var view: MKMarkerAnnotationView
@@ -86,7 +92,7 @@ extension ViewController: MKMapViewDelegate{
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        guard let annotation = view.annotation as? Game else { return }
+        guard let annotation = view.annotation as? GameAnnotation else { return }
         print(annotation.active)
     }
     

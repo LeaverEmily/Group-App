@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AwJ-Xp-aT1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1SG-2E-3eS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,9 +33,9 @@
                     <navigationItem key="navigationItem" id="mny-Ok-Tp1"/>
                     <connections>
                         <outlet property="mapView" destination="xPV-ff-IsL" id="sqV-dP-X40"/>
-                        <segue destination="8ip-gt-y6j" kind="show" identifier="snowflakes" id="4Mb-PW-ydp"/>
-                        <segue destination="AwJ-Xp-aT1" kind="show" identifier="noughtsAndCrosses" id="TOK-Ra-DAq"/>
-                        <segue destination="g0g-ga-3Mn" kind="show" identifier="guessThePhoto" id="D5C-zi-IEB"/>
+                        <segue destination="8ip-gt-y6j" kind="show" identifier="gameOne" id="4Mb-PW-ydp"/>
+                        <segue destination="AwJ-Xp-aT1" kind="show" identifier="gameTwo" id="TOK-Ra-DAq"/>
+                        <segue destination="g0g-ga-3Mn" kind="show" identifier="gameThree" id="D5C-zi-IEB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COq-Zz-sF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="1014"/>
+            <point key="canvasLocation" x="1108" y="1101"/>
         </scene>
         <!--Second Game-->
         <scene sceneID="VmQ-hf-7Au">
@@ -215,14 +215,10 @@
                         <color key="backgroundColor" red="0.75657967953993488" green="0.97392844887826036" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="V5X-xH-ec8"/>
                     </view>
-                    <connections>
-                        <outlet property="playButton" destination="w3U-Np-VP4" id="ibs-FN-Lao"/>
-                        <outlet property="winLabel" destination="L23-C4-CIW" id="Oqo-zY-suI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TvL-MO-Yye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2276" y="1012.4437781109445"/>
+            <point key="canvasLocation" x="2284" y="1011"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mbb-bT-I7s">

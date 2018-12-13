@@ -4,7 +4,7 @@ import Firebase
 
 class GameManager{
     
-    var games = [Game]()
+    var games = [GameAnnotation]()
     
     init(){
         
@@ -26,9 +26,18 @@ class GameManager{
     func loadPoints(completion: @escaping () -> ()) {
         let ref = Firestore.firestore().collection("locations")
         ref.getDocuments { snapshot, error in
+            
+            if let error = error {
+                fatalError(error.localizedDescription)
+            }
+        
+            
             guard let snapshot = snapshot else { return }
+            
+            print(snapshot.documents.count)
+            
             for document in snapshot.documents {
-                let newPoint = Game(document: document)
+                let newPoint = GameAnnotation(document: document)
                 self.games.append(newPoint)
             }
             completion()
@@ -36,7 +45,7 @@ class GameManager{
     }
     
     
-    func getGame(by name: String) -> Game? {
+    func getGame(by name: String) -> GameAnnotation? {
         return games.first() {$0.title == name}
     }
     

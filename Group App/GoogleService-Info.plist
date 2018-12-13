@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>630998327394-quo2k48q9bb2t7lab2ob952o01ck8ud8.apps.googleusercontent.com</string>
+	<string>54122072806-33tkic7ktdhdfc6u7rl48fhq3j0l3sfa.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.630998327394-quo2k48q9bb2t7lab2ob952o01ck8ud8</string>
+	<string>com.googleusercontent.apps.54122072806-33tkic7ktdhdfc6u7rl48fhq3j0l3sfa</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCxq_s_y3QfxqzW1ca_CrgMYrI24jjqsqA</string>
+	<string>AIzaSyDfNTUg5OKNRAmU77tBYny3mM3JmzPGQRU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>630998327394</string>
+	<string>54122072806</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>Emily-Leaver.Group-App</string>
 	<key>PROJECT_ID</key>
-	<string>test-5b2bb</string>
+	<string>group-app-928c3</string>
 	<key>STORAGE_BUCKET</key>
-	<string>test-5b2bb.appspot.com</string>
+	<string>group-app-928c3.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:630998327394:ios:ef34506a0869ae84</string>
+	<string>1:54122072806:ios:ef34506a0869ae84</string>
 	<key>DATABASE_URL</key>
-	<string>https://test-5b2bb.firebaseio.com</string>
+	<string>https://group-app-928c3.firebaseio.com</string>
 </dict>
 </plist>
