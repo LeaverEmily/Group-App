@@ -82,7 +82,6 @@
 		671D15F921AD75B7005F4E54 /* Group App */ = {
 			isa = PBXGroup;
 			children = (
-				7006494F21C2899C00A08F60 /* GoogleService-Info.plist */,
 				671D15FA21AD75B7005F4E54 /* AppDelegate.swift */,
 				671D15FC21AD75B7005F4E54 /* ViewController.swift */,
 				671D160C21AD7835005F4E54 /* FirstGame.swift */,
@@ -99,6 +98,7 @@
 				671D160121AD75B8005F4E54 /* Assets.xcassets */,
 				671D160321AD75B8005F4E54 /* LaunchScreen.storyboard */,
 				671D160621AD75B8005F4E54 /* Info.plist */,
+				7006494F21C2899C00A08F60 /* GoogleService-Info.plist */,
 			);
 			path = "Group App";
 			sourceTree = "<group>";
