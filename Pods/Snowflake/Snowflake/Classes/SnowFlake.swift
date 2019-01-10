@@ -40,13 +40,14 @@ public class Snowflake: CAEmitterLayer {
         }
     }
     
-    override public var emitterShape: String {
+    public override var emitterShape: CAEmitterLayerEmitterShape {
         get {
-            return kCAEmitterLayerLine
+            return CAEmitterLayerEmitterShape(rawValue: CAEmitterLayerEmitterShape.line.rawValue)
         }set {
             self.emitterShape = newValue
         }
     }
+    
     
     //MARK: Cell Properties
     

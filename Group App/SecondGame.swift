@@ -54,5 +54,9 @@ class SecondGame: UIViewController {
 
 
 }
+    
+    @IBAction func restartButton(_ sender: UIButton) {
+       // gameState.remove(at: [0, 0, 0, 0, 0, 0, 0, 0, 0])
+    }
 
 }
