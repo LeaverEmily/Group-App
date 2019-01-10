@@ -103,51 +103,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="biZ-vp-dg8">
-                                <rect key="frame" x="67" y="131" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL0-Bm-Kal">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL0-Bm-Kal">
                                 <rect key="frame" x="99" y="335" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="correctButton:" destination="g0g-ga-3Mn" eventType="touchUpInside" id="IDq-6c-zPB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csy-Rw-MsG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csy-Rw-MsG">
                                 <rect key="frame" x="221" y="335" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="firstIncorrectButton:" destination="g0g-ga-3Mn" eventType="touchUpInside" id="PdF-9c-eeW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2B-S0-8jm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2B-S0-8jm">
                                 <rect key="frame" x="99" y="467" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="secondIncorrectButton:" destination="g0g-ga-3Mn" eventType="touchUpInside" id="aZc-xw-rrm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwG-7g-n0B">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwG-7g-n0B">
                                 <rect key="frame" x="221" y="467" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="thirdIncorrectButton:" destination="g0g-ga-3Mn" eventType="touchUpInside" id="fBL-FH-KOW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess the Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H5-ml-mHo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H5-ml-mHo">
                                 <rect key="frame" x="123" y="85" width="129" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZg-nM-cK8">
+                                <rect key="frame" x="168" y="560" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="g0g-ga-3Mn" eventType="touchUpInside" id="RaD-IE-eDj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="biZ-vp-dg8">
+                                <rect key="frame" x="104" y="159" width="167" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="E7p-nR-pyQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AoL-8f-W1X" firstAttribute="bottom" secondItem="M2B-S0-8jm" secondAttribute="bottom" constant="170" id="1Zj-aO-fCz"/>
+                            <constraint firstItem="biZ-vp-dg8" firstAttribute="top" secondItem="3H5-ml-mHo" secondAttribute="bottom" constant="53" id="38M-vr-5OH"/>
+                            <constraint firstItem="3H5-ml-mHo" firstAttribute="centerX" secondItem="biZ-vp-dg8" secondAttribute="centerX" id="573-dK-vtJ"/>
+                            <constraint firstItem="PL0-Bm-Kal" firstAttribute="leading" secondItem="M2B-S0-8jm" secondAttribute="leading" id="ALC-4C-GLW"/>
+                            <constraint firstItem="PL0-Bm-Kal" firstAttribute="top" secondItem="biZ-vp-dg8" secondAttribute="bottom" constant="48" id="DsK-gP-n3K"/>
+                            <constraint firstItem="Csy-Rw-MsG" firstAttribute="leading" secondItem="kwG-7g-n0B" secondAttribute="leading" id="FFB-mi-3qk"/>
+                            <constraint firstItem="Csy-Rw-MsG" firstAttribute="leading" secondItem="PL0-Bm-Kal" secondAttribute="trailing" constant="76" id="Q1H-Lp-N5O"/>
+                            <constraint firstItem="PL0-Bm-Kal" firstAttribute="leading" secondItem="AoL-8f-W1X" secondAttribute="leading" constant="99" id="RN5-PF-6s0"/>
+                            <constraint firstItem="3H5-ml-mHo" firstAttribute="centerX" secondItem="LSZ-Tn-Uhp" secondAttribute="centerX" id="Wo8-uN-mte"/>
+                            <constraint firstItem="3H5-ml-mHo" firstAttribute="top" secondItem="AoL-8f-W1X" secondAttribute="top" constant="21" id="ZxF-Kq-ISP"/>
+                            <constraint firstItem="PL0-Bm-Kal" firstAttribute="baseline" secondItem="Csy-Rw-MsG" secondAttribute="baseline" id="cZj-cr-Vyo"/>
+                            <constraint firstItem="M2B-S0-8jm" firstAttribute="baseline" secondItem="kwG-7g-n0B" secondAttribute="baseline" id="cbg-kj-xfU"/>
+                            <constraint firstItem="AoL-8f-W1X" firstAttribute="bottom" secondItem="uZg-nM-cK8" secondAttribute="bottom" constant="77" id="jUL-0r-WKj"/>
+                            <constraint firstItem="biZ-vp-dg8" firstAttribute="leading" secondItem="AoL-8f-W1X" secondAttribute="leading" constant="104" id="sSk-Cg-CTH"/>
+                            <constraint firstItem="biZ-vp-dg8" firstAttribute="centerX" secondItem="uZg-nM-cK8" secondAttribute="centerX" id="sVt-dR-JVy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AoL-8f-W1X"/>
                     </view>
                     <connections>
@@ -157,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COq-Zz-sF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="1101"/>
+            <point key="canvasLocation" x="1108" y="1100.5997001499252"/>
         </scene>
         <!--Second Game-->
         <scene sceneID="VmQ-hf-7Au">
