@@ -7,5 +7,6 @@ target 'Group App' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Snowflake'
+  workspace 'MyWorkspace'
 
 end
