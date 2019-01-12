@@ -63,16 +63,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Guess the number of snowflakes!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrC-cX-2XW">
-                                <rect key="frame" x="36" y="120" width="342" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess the number of snowflakes!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrC-cX-2XW">
+                                <rect key="frame" x="36" y="179" width="342" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="snowflakes_PNG7545.png" translatesAutoresizingMaskIntoConstraints="NO" id="XmA-fo-smH">
-                                <rect key="frame" x="149" y="396" width="117" height="104"/>
-                            </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="k9o-3Z-EbI">
                                 <rect key="frame" x="50" y="778" width="314" height="31"/>
                                 <connections>
@@ -80,10 +78,37 @@
                                     <action selector="slider:" destination="8ip-gt-y6j" eventType="valueChanged" id="Sti-8N-9dX"/>
                                 </connections>
                             </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowflakes_PNG7545.png" translatesAutoresizingMaskIntoConstraints="NO" id="cch-Yd-gjr">
+                                <rect key="frame" x="227" y="260" width="95" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowflakes_PNG7545.png" translatesAutoresizingMaskIntoConstraints="NO" id="sZr-RZ-9eX">
+                                <rect key="frame" x="72" y="239" width="86" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowflakes_PNG7545.png" translatesAutoresizingMaskIntoConstraints="NO" id="iYP-pe-t7N">
+                                <rect key="frame" x="281" y="512" width="97" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowflakes_PNG7545.png" translatesAutoresizingMaskIntoConstraints="NO" id="kJj-ha-wYx">
+                                <rect key="frame" x="214" y="381" width="89" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowflakes_PNG7545.png" translatesAutoresizingMaskIntoConstraints="NO" id="EmA-yP-ZSq">
+                                <rect key="frame" x="36" y="381" width="104" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowflakes_PNG7545.png" translatesAutoresizingMaskIntoConstraints="NO" id="rQX-sT-8gp">
+                                <rect key="frame" x="100" y="499" width="104" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowflakes_PNG7545.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vh8-F8-giN">
+                                <rect key="frame" x="175" y="626" width="105" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.8142433158592921" green="0.88611667756437063" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="iQs-47-2VZ" firstAttribute="centerX" secondItem="XmA-fo-smH" secondAttribute="centerX" id="1OF-FV-yNp"/>
                             <constraint firstItem="iQs-47-2VZ" firstAttribute="leading" secondItem="rK7-cH-gSI" secondAttribute="leading" id="49l-hv-gcR"/>
                             <constraint firstItem="iQs-47-2VZ" firstAttribute="trailing" secondItem="rK7-cH-gSI" secondAttribute="trailing" id="4GY-uB-gJO"/>
                             <constraint firstItem="gEU-J9-sIe" firstAttribute="trailing" secondItem="k9o-3Z-EbI" secondAttribute="trailing" constant="52" id="CXC-UV-30B"/>
@@ -91,7 +116,6 @@
                             <constraint firstAttribute="bottom" secondItem="iQs-47-2VZ" secondAttribute="bottom" constant="59" id="bvC-bK-xah"/>
                             <constraint firstItem="iQs-47-2VZ" firstAttribute="leading" secondItem="T6E-VF-fXa" secondAttribute="leadingMargin" id="hH0-cD-37m"/>
                             <constraint firstItem="rK7-cH-gSI" firstAttribute="top" secondItem="iQs-47-2VZ" secondAttribute="bottom" constant="8" symbolic="YES" id="mu8-NH-SSo"/>
-                            <constraint firstItem="iQs-47-2VZ" firstAttribute="centerX" secondItem="TrC-cX-2XW" secondAttribute="centerX" id="skx-nC-fkJ"/>
                             <constraint firstItem="iQs-47-2VZ" firstAttribute="trailing" secondItem="T6E-VF-fXa" secondAttribute="trailingMargin" id="ub7-r0-q4w"/>
                             <constraint firstItem="iQs-47-2VZ" firstAttribute="centerX" secondItem="k9o-3Z-EbI" secondAttribute="centerX" id="wNT-SW-aSk"/>
                         </constraints>
@@ -105,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oN9-t0-F5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376.8000000000002" y="268.51574212893553"/>
+            <point key="canvasLocation" x="2375.36231884058" y="267.85714285714283"/>
         </scene>
         <!--Third Game-->
         <scene sceneID="EU5-5y-d2y">
