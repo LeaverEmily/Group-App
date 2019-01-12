@@ -11,7 +11,7 @@ class SecondGame: UIViewController {
 
     @IBAction func naughtButton(_ sender: UIButton) {
         
-        if (gameState[sender.tag-1] == 0)
+        if (gameState[sender.tag-1] == 0) && gameIsActive == true
             
         {
             gameState[sender.tag-1] = activePlayer
@@ -56,7 +56,18 @@ class SecondGame: UIViewController {
 }
     
     @IBAction func restartButton(_ sender: UIButton) {
-       // gameState.remove(at: [0, 0, 0, 0, 0, 0, 0, 0, 0])
+       gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        gameIsActive = true
+        activePlayer = 1
+        
+        for i in  1...9
+        { let button = view.viewWithTag(i) as! UIButton
+            button.setImage(nil, for: UIControl.State())
+            
+        }
+        gameIsActive = true
+        
     }
+    
 
 }

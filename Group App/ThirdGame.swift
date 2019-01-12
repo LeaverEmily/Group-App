@@ -4,21 +4,28 @@ import UIKit
 class ThirdGame: UIViewController {
     
     
-    @IBOutlet weak var titleImage: UILabel!
+
     @IBOutlet weak var imageView: UIImageView!
     
-    //let imageNames = ["ChristmasTree", "Santa", "Snowman", "Rudolf"]
+    let imageNames = ["ChristmasTree", "Santa", "Snowman", "Rudolf"]
     
     
     
     
     @IBAction func resetButton(_ sender: UIButton) {
         
-        let randomImageGen: Int = Int(arc4random_uniform(4))
+        func randomImage() -> UIImage {
+            let unsignedArrayCount = UInt32(imageNames.count)
+            let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
+            let randomNumber = Int(unsignedRandomNumber)
+            return UIImage(named: imageNames[randomNumber])!
+            
+            
+        }
         
         
         
-      //  imageView.image =  UIImage (named: imageNames)
+     // imageView.image =  imageNames.randomImage() 
         
         
     }
