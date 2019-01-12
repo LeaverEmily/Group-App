@@ -5,8 +5,6 @@ class FirstGame: UIViewController {
     
     var game: GameAnnotation!
    
-    
-    
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
@@ -16,6 +14,8 @@ class FirstGame: UIViewController {
         let score = slider.value.rounded() - target
         numberLabel.text = "\(score)"
     
+        
+        
     func generateRandomNumber() {
         target = Float.random(in: 0...50).rounded()
         numberLabel.text = "\(slider.value)"
@@ -27,7 +27,6 @@ class FirstGame: UIViewController {
     func viewDidLoad() {
         super.viewDidLoad()
         generateRandomNumber()
-        
         
         view.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
         let flake = #imageLiteral(resourceName: "flake")
