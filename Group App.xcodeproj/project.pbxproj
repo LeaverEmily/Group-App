@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62511F7D21E8E3B1009CF63C /* snowflakes_PNG7545.png in Resources */ = {isa = PBXBuildFile; fileRef = 62511F7C21E8E3B1009CF63C /* snowflakes_PNG7545.png */; };
 		654A143121BABDD0008A3802 /* grid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654A142E21BABDCB008A3802 /* grid.jpg */; };
 		654A143221BABDD0008A3802 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 654A142F21BABDCE008A3802 /* cross.png */; };
 		654A143321BABDD0008A3802 /* naught.png in Resources */ = {isa = PBXBuildFile; fileRef = 654A143021BABDD0008A3802 /* naught.png */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62511F7C21E8E3B1009CF63C /* snowflakes_PNG7545.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snowflakes_PNG7545.png; path = ../../../../Downloads/snowflakes_PNG7545.png; sourceTree = "<group>"; };
 		654A142E21BABDCB008A3802 /* grid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grid.jpg; sourceTree = "<group>"; };
 		654A142F21BABDCE008A3802 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		654A143021BABDD0008A3802 /* naught.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naught.png; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				654A142E21BABDCB008A3802 /* grid.jpg */,
 				671D161021AD78E4005F4E54 /* ThirdGame.swift */,
 				7024716D21B18C3E009CDCDD /* Location.gpx */,
+				62511F7C21E8E3B1009CF63C /* snowflakes_PNG7545.png */,
 				671D15FE21AD75B7005F4E54 /* Main.storyboard */,
 				671D160121AD75B8005F4E54 /* Assets.xcassets */,
 				671D160321AD75B8005F4E54 /* LaunchScreen.storyboard */,
@@ -188,6 +191,7 @@
 				671D160221AD75B8005F4E54 /* Assets.xcassets in Resources */,
 				671D160021AD75B7005F4E54 /* Main.storyboard in Resources */,
 				7006495021C2899C00A08F60 /* GoogleService-Info.plist in Resources */,
+				62511F7D21E8E3B1009CF63C /* snowflakes_PNG7545.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
